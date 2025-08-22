@@ -1,6 +1,7 @@
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -10,13 +11,14 @@ export default function Home() {
       <h1>{t("welcome")} 3BrainAI</h1>
       <p>{t("description")}</p>
       <div>
-        <a href="/cs">Cs</a>
+        <Link href="/cs">Cs</Link>
       </div>
       <div>
-        <a href="/">En</a>
+        <Link href="/en">En</Link>
       </div>
+
       <div>
-        <a href="/de">De</a>
+        <Link href="/de">De</Link>
       </div>
     </div>
   );
