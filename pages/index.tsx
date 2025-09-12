@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>{t("welcome")} 3BrainAI</h1>
+      <h1>{t("welcome")} Kamos!</h1>
       <p>{t("description")}</p>
       <div>
         <Link href="/cs">Cs</Link>
